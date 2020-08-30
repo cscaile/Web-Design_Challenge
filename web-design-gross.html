@@ -1,0 +1,179 @@
+<html lang="en"><head>
+    <title>Bootstrap Visualization Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 100px; /* Space for fixed navbar */
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-left: 4rem;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(54, 179, 188);
+  color: white;
+}
+
+.navbar .form-control {
+  border-width: 0;
+  border-radius: 0;
+}
+
+.dropdown-toggle {
+  color: gray;
+}
+
+.dropdown-item {
+  color: gray;
+}
+
+.nav-link {
+  color: gray;
+}
+
+.summary-head {
+  padding-top: .75rem;
+  color:  rgb(54, 179, 188);
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.viz-head {
+  padding-top: .75rem;
+  color:  rgb(54, 179, 188);
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.picturebox {
+  padding: 5px;
+  background-color: rgb(54, 179, 188);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  background-color: gray;
+  border-top: 5px lightblue;
+  justify-content: center;
+}
+
+</style>
+</head>
+    <body>
+        <nav class="navbar fixed-top p-0 shadow row">
+          <a class="navbar-brand col-md-2 offset-md-1" href="index.html"><strong>Lattitude</strong></a>
+            <div class="nav nav-masthead col-md-1 no-gutters">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Plots <span class="caret"></span></a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-toggle">
+                <a class="dropdown-item" href="web-design-gross.html">Gross Production Error</a>
+                <a class="dropdown-item" href="web-design-net.html">Net Production Error</a>
+                <a class="dropdown-item" href="web-design-opex.html">LOE Error</a>
+                <a class="dropdown-item" href="web-design-diff.html">Diff, M&G Error</a>
+              </div>
+            </div>
+            <div class="nav nav-masthead col-md-1 no-gutters">
+              <a class="nav-link" href="html-homework-rt-comparison.html">Comparison</a>
+            </div>
+            <div class="nav nav-masthead col-md-1 no-gutters"> 
+              <a class="nav-link" href="html-homework-rt-data.html">Data</a>
+            </div>
+          
+        </nav> 
+        
+        <main role="main" class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="my-3 p-4 bg-white shadow-sm border-top border-left border-right border-bottom">
+                <h1 class="summary-head border-gray pb-2 mb-0"><strong>Gross Production Error</strong> </h1>
+                  <img class="mr-3" src="Visualizations/gross_oil_RE.jpg" alt="" width="600" height="450">
+                  <p>Gross production error is a measure of predicted volume minus actual 
+                      volume divided by predicted volume.  Each bar represents a reserve 
+                      report run where the engineering team updated production forecasts.  
+                      As you can see we have improved our gross volume predictions each quarter. 
+               </p> 
+            </div>
+        </div>
+        <div class="col-lg-4.15">
+            <div class="my-3 p-4 bg-white shadow-sm border-top border-left border-right border-bottom">
+                <h1 class="viz-head border-gray pb-2 mb-0"><strong>Visualizations</strong> </h1>
+                  <div class="col-lg-4.15">
+                    <a target="_blank" href="web-design-gross.html">                     
+                      <img class="mr-3" src="Visualizations/gross_oil_RE.jpg" alt="" width="150" height="150"> </a>
+                    <a target="_blank" href="web-design-net.html">    
+                      <img class="mr-3" src="Visualizations/Net_oil_RE.jpg" alt="" width="150" height="150"></a>
+                  </div> 
+                  <div class="col-lg-4.15">
+                    <a target="_blank" href="web-design-opex.html">  
+                      <img class="mr-3" src="Visualizations/opex_RE.jpg" alt="" width="150" height="150"></a> 
+                    <a target="_blank" href="web-design-diff.html"> 
+                      <img class="mr-3" src="Visualizations/Diff_RE.jpg" alt="" width="150" height="150"></a>
+                  </div> 
+                </div>
+          </div>
+          </div>
+          </main>
+
+          <div class="footer navbar">Copyright Coding Bootcamp 2017</div>
+          
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+    
+        
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+
+
+</body></html>
