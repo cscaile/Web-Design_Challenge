@@ -1,5 +1,5 @@
 <html lang="en"><head>
-    <title>Raisa Gross Accuracy</title>
+    <title>Raisa Comparison</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -83,11 +83,6 @@ body {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
 
-.picturebox {
-  padding: 5px;
-  background-color: rgb(54, 179, 188);
-}
-
 .footer {
   position: fixed;
   bottom: 0;
@@ -104,59 +99,52 @@ body {
 </head>
     <body>
         <nav class="navbar fixed-top p-0 shadow row">
-          <a class="navbar-brand col-md-2 offset-md-1" href="index.html"><strong>Raisa Accuracy</strong></a>
-            <div class="nav nav-masthead col-md-1 no-gutters">
-              <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Plots <span class="caret"></span></a>
-              <div class="dropdown-menu" aria-labelledby="dropdown-toggle">
-                <a class="dropdown-item" href="web-design-gross.html">Gross Production Error</a>
-                <a class="dropdown-item" href="web-design-net.html">Net Production Error</a>
-                <a class="dropdown-item" href="web-design-opex.html">LOE Error</a>
-                <a class="dropdown-item" href="web-design-diff.html">Diff, M&G Error</a>
+            <a class="navbar-brand col-md-2 offset-md-1" href="Raisa_Dashboard.html"><strong>Raisa Accuracy</strong></a>
+              <div class="nav nav-masthead col-md-1 no-gutters">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Plots <span class="caret"></span></a>
+                <div class="dropdown-menu" aria-labelledby="dropdown-toggle">
+                  <a class="dropdown-item" href="web-design-gross.html">Gross Production Error</a>
+                  <a class="dropdown-item" href="web-design-net.html">Net Production Error</a>
+                  <a class="dropdown-item" href="web-design-opex.html">LOE Error</a>
+                  <a class="dropdown-item" href="web-design-diff.html">Diff, M&G Error</a>
+                </div>
               </div>
-            </div>
-            <div class="nav nav-masthead col-md-1 no-gutters">
-              <a class="nav-link" href="web-design-comparison.html">Comparison</a>
-            </div>
-            <div class="nav nav-masthead col-md-1 no-gutters"> 
-              <a class="nav-link" href="web-design-data.html">Data</a>
-            </div>
+              <div class="nav nav-masthead col-md-1 no-gutters">
+                <a class="nav-link" href="web-design-comparison.html">Comparison</a>
+              </div>
+              <div class="nav nav-masthead col-md-1 no-gutters"> 
+                <a class="nav-link" href="web-design-data.html">Data</a>
+              </div>
           
         </nav> 
         
         <main role="main" class="container">
-          <div class="row">
-            <div class="col-lg-7">
+            <div class="row col-md-12">
               <div class="my-3 p-4 bg-white shadow-sm border-top border-left border-right border-bottom">
-                <h1 class="summary-head border-gray pb-2 mb-0"><strong>Gross Production Error</strong> </h1>
-                  <img class="mr-3" src="Visualizations/gross_oil_RE.jpg" alt="" width="600" height="450">
-                  <p>Gross production error is a measure of predicted volume minus actual 
-                      volume divided by predicted volume.  Each bar represents a reserve 
-                      report run where the engineering team updated production forecasts.  
-                      As you can see we have improved our gross volume predictions each quarter. 
-               </p> 
-            </div>
-        </div>
-        <div class="col-lg-4.15">
-            <div class="my-3 p-4 bg-white shadow-sm border-top border-left border-right border-bottom">
-                <h1 class="viz-head border-gray pb-2 mb-0"><strong>Visualizations</strong> </h1>
-                  <div class="col-lg-4.15">
-                    <a target="_blank" href="web-design-gross.html">                     
-                      <img class="mr-3" src="Visualizations/gross_oil_RE.jpg" alt="" width="150" height="150"> </a>
-                    <a target="_blank" href="web-design-net.html">    
-                      <img class="mr-3" src="Visualizations/Net_oil_RE.jpg" alt="" width="150" height="150"></a>
-                  </div> 
-                  <div class="col-lg-4.15">
-                    <a target="_blank" href="web-design-opex.html">  
-                      <img class="mr-3" src="Visualizations/opex_RE.jpg" alt="" width="150" height="150"></a> 
-                    <a target="_blank" href="web-design-diff.html"> 
-                      <img class="mr-3" src="Visualizations/Diff_RE.jpg" alt="" width="150" height="150"></a>
-                  </div> 
+                <div class="summary-head border-gray pb-2 mb-0"><strong>Dashboard of Raisa Accuracy Measures</strong> </div>
+                    <p>Select a plot to see more</p>
+                    <div class="col-md-12">
+                        <row>
+                        <h1 class="viz-head offset-md-1"><strong>Gross Production</strong> 
+                            <a class="viz-head offset-md-4 align-right"><strong>Net Production</strong></a></h1>
+                        <a target="_blank" href="web-design-gross.html">                  
+                          <img class="mr-3" src="Visualizations/gross_oil_RE.jpg" alt="" width="480" height="400"> </a>
+                        <a target="_blank" href="web-design-net.html">
+                            <img class="mr-3" src="Visualizations/Net_oil_RE.jpg" alt="" width="480" height="400"></a>
+                        </row>
+                        <row>
+                        <h1 class="viz-head offset-md-2"><strong>OPEX</strong> 
+                            <a class="viz-head offset-md-5"><strong>Diff and M&G</strong></a></h1>
+                        <a target="_blank" href="web-design-opex.html">   
+                            <img class="mr-3" src="Visualizations/opex_RE.jpg" alt="" width="480" height="400"></a>
+                        <a target="_blank" href="web-design-diff.html"> 
+                            <img class="mr-3" src="Visualizations/Diff_RE.jpg" alt="" width="480" height="400"></a>
+                        </row>
+                    </div>
                 </div>
           </div>
-          </div>
           </main>
-
-          <div class="footer navbar">Copyright Raisa Energy 2020</div>
+          <div class="footer navbar">Copyright Coding Bootcamp 2017</div>
           
         <!-- Bootstrap core JavaScript
         ================================================== -->
