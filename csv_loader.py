@@ -4,6 +4,7 @@ import csv
 import pandas as pd
 # csvpath=pd.read_csv('C://Users/Curtis Caile/Desktop/DU Bootcamp/Web-Design_Challenge/resources/Spotfireloader.csv')
 csvpath='C://Users/Curtis Caile/Desktop/DU Bootcamp/Web-Design_Challenge/resources/Spotfireloader.csv'
+output_path='C://Users/Curtis Caile/Desktop/DU Bootcamp/Web-Design_Challenge/resources/htmlloader.txt'
 # csv_file = open(csvpath, 'r')
 # csv_text = csv_file.readlines()
 # line_1=csv_text[0]
